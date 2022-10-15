@@ -21,7 +21,7 @@ struct PostCardView: View {
                 Rectangle()
                     .foregroundColor(Color(uiColor: .secondarySystemFill))
             }
-            .frame(height: 200)
+            .frame(height: 100)
             .clipShape(ContainerRelativeShape())
             .padding([.horizontal,.top], 8)
             VStack(alignment: .leading, spacing: 8) {
