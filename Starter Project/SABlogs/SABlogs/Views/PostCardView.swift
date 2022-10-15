@@ -39,9 +39,10 @@ struct PostCardView: View {
                 .fill(.thickMaterial)
         )
         .containerShape(RoundedRectangle(cornerRadius: 20))
-        .listRowSeparator(.hidden)
         .compositingGroup()
         .shadow(radius: 1)
+        .padding(.horizontal)
+        .listRowSeparator(.hidden)
     }
 }
 

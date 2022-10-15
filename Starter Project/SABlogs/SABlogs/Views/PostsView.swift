@@ -12,16 +12,18 @@ struct PostsView: View {
     @StateObject var viewModel = PostsViewModel()
     var body: some View {
         NavigationView {
-            List {
-                Section {
-                    ForEach(viewModel.posts) { post in
-                        PostCardView(post: post)
+            ScrollView {
+                LazyVStack(spacing: 16, pinnedViews: .sectionHeaders) {
+                    Section {
+                        ForEach(viewModel.posts) { post in
+                            PostCardView(post: post)
+                        }
+                    } header: {
+                        PostCategoryPickerView(
+                            catergories: PostCategory.allCases,
+                            selectedPostCategory: $viewModel.selectedPostCategory
+                        )
                     }
-                } header: {
-                    PostCategoryPickerView(
-                        catergories: PostCategory.allCases,
-                        selectedPostCategory: $viewModel.selectedPostCategory
-                    )
                 }
             }
             .listStyle(.plain)

@@ -19,7 +19,11 @@ struct PostCategoryPickerView: View {
                     .tag(category)
             }
         }
-        .pickerStyle(SegmentedPickerStyle())    }
+        .pickerStyle(SegmentedPickerStyle())
+        .padding(.horizontal)
+        .padding(.vertical, 4)
+        .background(.regularMaterial)
+    }
 }
 
 struct PostCategoryPickerView_Previews: PreviewProvider {

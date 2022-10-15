@@ -14,10 +14,47 @@
 		282BE30E28ECD429008E481F /* PostCategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30728ECD429008E481F /* PostCategoryPickerView.swift */; };
 		282BE30F28ECD429008E481F /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30828ECD429008E481F /* PostCardView.swift */; };
 		282BE31028ECD429008E481F /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30928ECD429008E481F /* PostsView.swift */; };
+		282BE32028ECE73B008E481F /* SADynamicConfigurableWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE31E28ECE738008E481F /* SADynamicConfigurableWidget.swift */; };
+		285BD3D028EEEFAC009BFB15 /* PostEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BD3CF28EEEFAC009BFB15 /* PostEntry.swift */; };
+		285BD96928F0A3E3009BFB15 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30428ECD429008E481F /* Posts.swift */; };
+		285BD96A28F2D8D9009BFB15 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30228ECD429008E481F /* PostRepository.swift */; };
+		285BD96C28F2F7FE009BFB15 /* SADynamicConfigurableWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BD96B28F2F7FE009BFB15 /* SADynamicConfigurableWidgetEntryView.swift */; };
+		285BD96D28F2F97F009BFB15 /* PostCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BE30528ECD429008E481F /* PostCategory.swift */; };
 		2861BF6328ECBC99008C294D /* SABlogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861BF6228ECBC99008C294D /* SABlogsApp.swift */; };
 		2861BF6728ECBC9A008C294D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2861BF6628ECBC9A008C294D /* Assets.xcassets */; };
 		2861BF6A28ECBC9A008C294D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2861BF6928ECBC9A008C294D /* Preview Assets.xcassets */; };
+		2861BF8928ECD4EB008C294D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861BF8828ECD4EB008C294D /* WidgetKit.framework */; };
+		2861BF8B28ECD4EB008C294D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2861BF8A28ECD4EB008C294D /* SwiftUI.framework */; };
+		2861BF9128ECD4EC008C294D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2861BF9028ECD4EC008C294D /* Assets.xcassets */; };
+		2861BF9328ECD4EC008C294D /* SABlogsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2861BF8F28ECD4EB008C294D /* SABlogsWidget.intentdefinition */; };
+		2861BF9428ECD4EC008C294D /* SABlogsWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2861BF8F28ECD4EB008C294D /* SABlogsWidget.intentdefinition */; };
+		2861BF9728ECD4EC008C294D /* SABlogsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2861BF8628ECD4EB008C294D /* SABlogsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		28C87A5228F034FC0098BDE5 /* SADynamicConfigurableTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C87A5128F034FC0098BDE5 /* SADynamicConfigurableTimelineProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2861BF9528ECD4EC008C294D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2861BF5728ECBC99008C294D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2861BF8528ECD4EB008C294D;
+			remoteInfo = SABlogsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2861BF9B28ECD4EC008C294D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2861BF9728ECD4EC008C294D /* SABlogsWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		282BE30028ECD429008E481F /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
@@ -27,10 +64,21 @@
 		282BE30728ECD429008E481F /* PostCategoryPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCategoryPickerView.swift; sourceTree = "<group>"; };
 		282BE30828ECD429008E481F /* PostCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		282BE30928ECD429008E481F /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		282BE31E28ECE738008E481F /* SADynamicConfigurableWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SADynamicConfigurableWidget.swift; sourceTree = "<group>"; };
+		285BD3CF28EEEFAC009BFB15 /* PostEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntry.swift; sourceTree = "<group>"; };
+		285BD96B28F2F7FE009BFB15 /* SADynamicConfigurableWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SADynamicConfigurableWidgetEntryView.swift; sourceTree = "<group>"; };
 		2861BF5F28ECBC99008C294D /* SABlogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SABlogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2861BF6228ECBC99008C294D /* SABlogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SABlogsApp.swift; sourceTree = "<group>"; };
 		2861BF6628ECBC9A008C294D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2861BF6928ECBC9A008C294D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2861BF8628ECD4EB008C294D /* SABlogsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SABlogsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2861BF8828ECD4EB008C294D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2861BF8A28ECD4EB008C294D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2861BF8F28ECD4EB008C294D /* SABlogsWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SABlogsWidget.intentdefinition; sourceTree = "<group>"; };
+		2861BF9028ECD4EC008C294D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2861BF9228ECD4EC008C294D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C87A5028EF0F450098BDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		28C87A5128F034FC0098BDE5 /* SADynamicConfigurableTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SADynamicConfigurableTimelineProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +86,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2861BF8328ECD4EB008C294D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2861BF8B28ECD4EB008C294D /* SwiftUI.framework in Frameworks */,
+				2861BF8928ECD4EB008C294D /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				2861BF6128ECBC99008C294D /* SABlogs */,
+				2861BF8C28ECD4EB008C294D /* SABlogsWidget */,
+				2861BF8728ECD4EB008C294D /* Frameworks */,
 				2861BF6028ECBC99008C294D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				2861BF5F28ECBC99008C294D /* SABlogs.app */,
+				2861BF8628ECD4EB008C294D /* SABlogsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +158,7 @@
 		2861BF6128ECBC99008C294D /* SABlogs */ = {
 			isa = PBXGroup;
 			children = (
+				28C87A5028EF0F450098BDE5 /* Info.plist */,
 				282BE30328ECD429008E481F /* Models */,
 				282BE30128ECD429008E481F /* Repositories */,
 				282BE2FF28ECD429008E481F /* ViewModel */,
@@ -117,6 +178,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2861BF8728ECD4EB008C294D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2861BF8828ECD4EB008C294D /* WidgetKit.framework */,
+				2861BF8A28ECD4EB008C294D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2861BF8C28ECD4EB008C294D /* SABlogsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2861BF8F28ECD4EB008C294D /* SABlogsWidget.intentdefinition */,
+				2861BF9028ECD4EC008C294D /* Assets.xcassets */,
+				2861BF9228ECD4EC008C294D /* Info.plist */,
+				282BE31E28ECE738008E481F /* SADynamicConfigurableWidget.swift */,
+				285BD3CF28EEEFAC009BFB15 /* PostEntry.swift */,
+				28C87A5128F034FC0098BDE5 /* SADynamicConfigurableTimelineProvider.swift */,
+				285BD96B28F2F7FE009BFB15 /* SADynamicConfigurableWidgetEntryView.swift */,
+			);
+			path = SABlogsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,15 +211,34 @@
 				2861BF5B28ECBC99008C294D /* Sources */,
 				2861BF5C28ECBC99008C294D /* Frameworks */,
 				2861BF5D28ECBC99008C294D /* Resources */,
+				2861BF9B28ECD4EC008C294D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2861BF9628ECD4EC008C294D /* PBXTargetDependency */,
 			);
 			name = SABlogs;
 			productName = SABlogs;
 			productReference = 2861BF5F28ECBC99008C294D /* SABlogs.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2861BF8528ECD4EB008C294D /* SABlogsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2861BF9828ECD4EC008C294D /* Build configuration list for PBXNativeTarget "SABlogsWidgetExtension" */;
+			buildPhases = (
+				2861BF8228ECD4EB008C294D /* Sources */,
+				2861BF8328ECD4EB008C294D /* Frameworks */,
+				2861BF8428ECD4EB008C294D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SABlogsWidgetExtension;
+			productName = SABlogsWidgetExtension;
+			productReference = 2861BF8628ECD4EB008C294D /* SABlogsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,6 +251,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					2861BF5E28ECBC99008C294D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2861BF8528ECD4EB008C294D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -166,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				2861BF5E28ECBC99008C294D /* SABlogs */,
+				2861BF8528ECD4EB008C294D /* SABlogsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +284,14 @@
 			files = (
 				2861BF6A28ECBC9A008C294D /* Preview Assets.xcassets in Resources */,
 				2861BF6728ECBC9A008C294D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2861BF8428ECD4EB008C294D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2861BF9128ECD4EC008C294D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,12 +308,36 @@
 				2861BF6328ECBC99008C294D /* SABlogsApp.swift in Sources */,
 				282BE30A28ECD429008E481F /* PostsViewModel.swift in Sources */,
 				282BE30E28ECD429008E481F /* PostCategoryPickerView.swift in Sources */,
+				2861BF9428ECD4EC008C294D /* SABlogsWidget.intentdefinition in Sources */,
 				282BE30D28ECD429008E481F /* PostCategory.swift in Sources */,
 				282BE31028ECD429008E481F /* PostsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2861BF8228ECD4EB008C294D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285BD96C28F2F7FE009BFB15 /* SADynamicConfigurableWidgetEntryView.swift in Sources */,
+				28C87A5228F034FC0098BDE5 /* SADynamicConfigurableTimelineProvider.swift in Sources */,
+				285BD96D28F2F97F009BFB15 /* PostCategory.swift in Sources */,
+				285BD96928F0A3E3009BFB15 /* Posts.swift in Sources */,
+				2861BF9328ECD4EC008C294D /* SABlogsWidget.intentdefinition in Sources */,
+				285BD96A28F2D8D9009BFB15 /* PostRepository.swift in Sources */,
+				282BE32028ECE73B008E481F /* SADynamicConfigurableWidget.swift in Sources */,
+				285BD3D028EEEFAC009BFB15 /* PostEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2861BF9628ECD4EC008C294D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2861BF8528ECD4EB008C294D /* SABlogsWidgetExtension */;
+			targetProxy = 2861BF9528ECD4EC008C294D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2861BF6B28ECBC9A008C294D /* Debug */ = {
@@ -318,6 +457,7 @@
 		2861BF6E28ECBC9A008C294D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +466,7 @@
 				DEVELOPMENT_TEAM = QR8D9G9JQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SABlogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +488,7 @@
 		2861BF6F28ECBC9A008C294D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -355,6 +497,7 @@
 				DEVELOPMENT_TEAM = QR8D9G9JQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SABlogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +510,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.SABlogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2861BF9928ECD4EC008C294D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QR8D9G9JQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SABlogsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SABlogsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.SABlogs.SABlogsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2861BF9A28ECD4EC008C294D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QR8D9G9JQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SABlogsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SABlogsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.SABlogs.SABlogsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,6 +587,15 @@
 			buildConfigurations = (
 				2861BF6E28ECBC9A008C294D /* Debug */,
 				2861BF6F28ECBC9A008C294D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2861BF9828ECD4EC008C294D /* Build configuration list for PBXNativeTarget "SABlogsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2861BF9928ECD4EC008C294D /* Debug */,
+				2861BF9A28ECD4EC008C294D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
